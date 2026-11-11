@@ -4,21 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image Gallery</title>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!--Header-->
+  
   <header class="gallery-header">
     <h1>Image Gallery</h1>
   </header>
-  <!--Filter-->
+
   <main>
-  
     <input type="radio" name="filter" id="filter-all" checked>
     <input type="radio" name="filter" id="filter-landscapes">
     <input type="radio" name="filter" id="filter-portraits">
     <input type="radio" name="filter" id="filter-architecture">
-    
+
     <div class="filter-container">
       <label for="filter-all" class="filter-button">All</label>
       <label for="filter-landscapes" class="filter-button">Landscapes</label>
@@ -26,116 +25,152 @@
       <label for="filter-architecture" class="filter-button">Architecture</label>
     </div>
 
-   <div class="gallery-grid">
+    <div class="gallery-grid">
+      <!-- Card 1 -->
       <div class="gallery-card" data-category="landscapes">
-        <img src="https://placeholder.com/300x200" alt="Image 1">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Image 1">
         <div class="card-content">
           <span class="category-tag">Landscapes</span>
-          <h3>Title</h3>
+          <h3>River in Yosemite</h3>
         </div>
         <div class="overlay">
-          <p>Description</p>
-        </div>
-      <div class="gallery-card" data-category="architecture">
-        <img src="https://placeholder.com/300x200" alt="Image 2">
-        <div class="card-content">
-          <span class="category-tag">Architecture</span>
-          <h3>Title</h3>
-        </div>
-        <div class="overlay">
-          <p>Description</p>
-        </div>
-      <div class="gallery-card" data-category="portraits">
-        <img src="https://placeholder.com/300x200" alt="Image 3">
-        <div class="card-content">
-          <span class="category-tag">Landscapes</span>
-          <h3>Title</h3>
-        </div>
-        <div class="overlay">
-          <p>Description</p>
-        </div>
-      <div class="gallery-card" data-category="portraits">
-        <img src="https://placeholder.com/300x200" alt="Image 4">
-        <div class="card-content">
-          <span class="category-tag">Portraits</span>
-          <h3>Title</h3>
-        </div>
-        <div class="overlay">
-          <p>Description</p>
-        </div>
-      <div class="gallery-card" data-category="landscapes">
-        <img src="https://placeholder.com/300x200" alt="Image 5">
-        <div class="card-content">
-          <span class="category-tag">Landscapes</span>
-          <h3>Title</h3>
-        </div>
-        <div class="overlay">
-          <p>Description</p>
-        </div>
-      <div class="gallery-card" data-category="architecture">
-        <img src="https://placeholder.com/300x200" alt="Image 6">
-        <div class="card-content">
-          <span class="category-tag">Architecture</span>
-          <h3>Title</h3>
-        </div>
-        <div class="overlay">
-          <p>Description</p>
-        </div>
-      <div class="gallery-card" data-category="portrait">
-        <img src="https://placeholder.com/300x200" alt="Image 7">
-        <div class="card-content">
-          <span class="category-tag">Portrait</span>
-          <h3>Title</h3>
-        </div>
-        <div class="overlay">
-          <p>Description</p>
-        </div>
-      <div class="gallery-card" data-category="landscapes">
-        <img src="https://placeholder.com/300x200" alt="Image 8">
-        <div class="card-content">
-          <span class="category-tag">Landscapes</span>
-          <h3>Title</h3>
-        </div>
-        <div class="overlay">
-          <p>Description</p>
-        </div>
-      <div class="gallery-card" data-category="architecture">
-        <img src="https://placeholder.com/300x200" alt="Image 9">
-        <div class="card-content">
-          <span class="category-tag">Architecture</span>
-          <h3>Title</h3>
-        </div>
-        <div class="overlay">
-          <p>Description</p>
-        </div>
-      <div class="gallery-card" data-category="landscapes">
-        <img src="https://placeholder.com/300x200" alt="Image 10">
-        <div class="card-content">
-          <span class="category-tag">Landscapes</span>
-          <h3>Title</h3>
-        </div>
-        <div class="overlay">
-          <p>Description</p>
-        </div>
-      <div class="gallery-card" data-category="portraits">
-        <img src="https://placeholder.com/300x200" alt="Image 11">
-        <div class="card-content">
-          <span class="category-tag">Portraits</span>
-          <h3>Title</h3>
-        </div>
-        <div class="overlay">
-          <p>Description</p>
-        </div>
-      <div class="gallery-card" data-category="architecture">
-        <img src="https://placeholder.com/300x200" alt="Image 12">
-        <div class="card-content">
-          <span class="category-tag">Architecture</span>
-          <h3>Title</h3>
-        </div>
-        <div class="overlay">
-          <p>Description</p>
+          <p>A river flowing through Yosemite Valley with granite cliffs and pine trees at low light
+          </p>
         </div>
       </div>
+
+      <!-- Card 2 -->
+      <div class="gallery-card" data-category="architecture">
+        <img src="https://images.unsplash.com/photo-1527576539890-dfa815648363?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Image 2">
+        <div class="card-content">
+          <span class="category-tag">Architecture</span>
+          <h3>Axel Towers</h3>
+        </div>
+        <div class="overlay">
+          <p>The curved facade of Axel Towers in Copenhagen againts a bright sky</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="gallery-card" data-category="portraits">
+        <img src="https://plus.unsplash.com/premium_photo-1770595217303-a1fd95e1c9f8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Image 3">
+        <div class="card-content">
+          <span class="category-tag">Portraits</span>
+          <h3>Casual</h3>
+        </div>
+        <div class="overlay">
+          <p>A portrait of a woman at a casual studio portrait shoot</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="gallery-card" data-category="portraits">
+        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Image 4">
+        <div class="card-content">
+          <span class="category-tag">Portraits</span>
+          <h3>Outdoors</h3>
+        </div>
+        <div class="overlay">
+          <p>Shallow focus photography of a woman outdoors during the day</p>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="gallery-card" data-category="landscapes">
+        <img src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Image 5">
+        <div class="card-content">
+          <span class="category-tag">Landscapes</span>
+          <h3>Lake Atitlan</h3>
+        </div>
+        <div class="overlay">
+          <p>A stone path through purple flowers leading to a wooden pier on Lake Atitlan</p>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="gallery-card" data-category="architecture">
+        <img src="https://images.unsplash.com/photo-1428366890462-dd4baecf492b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Image 6">
+        <div class="card-content">
+          <span class="category-tag">Architecture</span>
+          <h3>Empire State Building</h3>
+        </div>
+        <div class="overlay">
+          <p>The Empire State building in New York City under a pale crescent moon</p>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="gallery-card" data-category="portraits">
+        <img src="https://images.unsplash.com/photo-1600196596197-29a040a8d444?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Image 7">
+        <div class="card-content">
+          <span class="category-tag">Portraits</span>
+          <h3>Black and White</h3>
+        </div>
+        <div class="overlay">
+          <p>A black and white photo of a man with a beard</p>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="gallery-card" data-category="landscapes">
+        <img src="https://images.unsplash.com/photo-1505852679233-d9fd70aff56d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Image 8">
+        <div class="card-content">
+          <span class="category-tag">Landscapes</span>
+          <h3>Na Pali Mountains</h3>
+        </div>
+        <div class="overlay">
+          <p>An Aerial view of the lush green Na Pali Coast mountains in Kauai, Hawaii</p>
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="gallery-card" data-category="architecture">
+        <img src="https://plus.unsplash.com/premium_photo-1754254920428-5f6cc7243e7b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Image 9">
+        <div class="card-content">
+          <span class="category-tag">Architecture</span>
+          <h3>Bank Towers in Frankfurt</h3>
+        </div>
+        <div class="overlay">
+          <p>Modern Bank Towers in Frankfurt in late afternoon, captured in wide angle</p>
+        </div>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="gallery-card" data-category="landscapes">
+        <img src="https://images.unsplash.com/photo-1619266465172-02a857c3556d?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Image 10">
+        <div class="card-content">
+          <span class="category-tag">Landscapes</span>
+          <h3>Fragradalsfjall Volcano</h3>
+        </div>
+        <div class="overlay">
+          <p>Molten lava flowing from the Fragradalsfjall volcano across a dark rocky landscape in Iceland</p>
+        </div>
+      </div>
+
+      <!-- Card 11 -->
+      <div class="gallery-card" data-category="portraits">
+        <img src="https://plus.unsplash.com/premium_photo-1661353246181-67c474938711?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Image 11">
+        <div class="card-content">
+          <span class="category-tag">Portraits</span>
+          <h3>Facial Expressions</h3>
+        </div>
+        <div class="overlay">
+          <p>A portrait of a man looking worried about something</p>
+        </div>
+      </div>
+
+      <!-- Card 12 -->
+      <div class="gallery-card" data-category="architecture">
+        <img src="https://images.unsplash.com/photo-1531591022136-eb8b0da1e6d0?q=80&w=1112&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Image 12">
+        <div class="card-content">
+          <span class="category-tag">Architecture</span>
+          <h3>Walt Disney Concert Hall</h3>
+        </div>
+        <div class="overlay">
+          <p>Curved stainless steel panels on the Walt Disney Concert Hall in Los Angeles</p>
+        </div>
+      </div>
+
     </div>
   </main>
 </body>

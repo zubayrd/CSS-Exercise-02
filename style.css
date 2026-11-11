@@ -35,7 +35,7 @@ input[type="radio"] {
   font-weight: 500;
   border-radius: 30px;
   cursor: pointer;
-  transition: all 0.3 ease;
+  transition: all 0.3s ease;
   user-select: none;
 }
 
@@ -61,6 +61,85 @@ input[type="radio"] {
 
 .gallery-card {
   background: white;
-  border-radius: 10px
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  position: relative;
+  display: grid;
+  grid-template-rows: 200px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.category-tag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #3182ce;
+}
+
+.card-content h3 {
+  font-size: 1.1rem;
+  color: #2d3748;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(45, 55, 72, 0.85);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gallery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-card:hover .overlay {
+  opacity: 1;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.05);
+}
+
+#filter-landscapes:checked ~ .gallery-grid .gallery-card:not([data-category="landscapes"]),
+#filter-portraits:checked ~ .gallery-grid .gallery-card:not([data-category="portraits"]),
+#filter-architecture:checked ~ .gallery-grid .gallery-card:not([data-category="architecture"]) {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
